@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/Calculator.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+  background-color: #1e6844;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 360px;
+}
+
+.display {
+    width: 100%;
+    background-color: #dceeff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 90%;
+}
+
+#expression {
+    font-size: 1rem;
+    color: #555;
+    word-wrap: break-word;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: right;
+}
+
+#result {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #123456;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    height: 60px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #cde3fc;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    width: 100%; /* make all buttons stretch equally */
+}
+
+button:hover {
+  background-color: #a9cdfc;
+}
+
+.enter {
+  grid-column: span 2;
+  background-color: #14904c;
+  color: white;
+  font-weight: bold;
+}
